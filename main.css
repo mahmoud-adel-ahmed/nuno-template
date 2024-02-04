@@ -1,11 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .navbar {
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   background-color: rgba(0, 0, 0, 0.85) !important;
+  z-index: 99;
 }
 .navbar-brand img {
   height: 2rem;
@@ -122,6 +129,7 @@ blockquote .svg-inline--fa {
   color: #1ebba3;
   margin: 1rem;
 }
+
 .clients-hr {
   border-top: 0.05rem solid #1ebba3;
   width: 90%;
@@ -129,6 +137,7 @@ blockquote .svg-inline--fa {
 }
 .clients img {
   object-fit: cover !important;
+  margin-bottom: 1rem !important;
 }
 footer {
   background-color: #40474e !important;
@@ -141,13 +150,15 @@ footer img {
   margin: 1.5rem 0;
 }
 
-footer .svg-inline--fa {
+footer .svg-inline--fa,
+.fab {
   margin: 1.2rem 0.5rem 0 0;
   font-size: 1.6rem;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-footer .svg-inline--fa:hover {
+footer .svg-inline--fa:hover,
+.fab:hover {
   color: #1ebba3;
 }
 hr.socket {
